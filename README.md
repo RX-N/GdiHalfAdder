@@ -1,16 +1,15 @@
-#  [SCHMITT TRIGGER USING CMOS](https://github.com/YashEkhande04/SchmittTriggerCMOS.git)
+#  [HALF ADDER USING GDI IMPLEMENTATION](https://github.com/RX-N/GdiHalfAdder)
 ____________________________________________________________________________________________________________________________________________
-This page consists the design and characteristic analysis of CMOS based Schmitt Trigger .To determine its use and its utility along with performance and efficiency pre-layout analysis has carried out.
+This page consists the design and implementation of GDI based Half Adder.
 
 
 
 
-### [A Quick Glance at Schmitt Triggers:Signal Stability and Noise Immunity](https://github.com/YashEkhande04/SchmittTriggerCMOS/blob/3ddfea1bc86ae743b96d1ec74ad954aa366e7efd/DOCUMENTS/Yash%20K%20Ekhande%20Stage%201.pdf)
+### [A Quick Glance at Half Adder](https://github.com/RX-N/GdiHalfAdder/blob/main/DOCUMENTS/Riaan%20Jain%20Stage%201%20Submission.pdf)
 ***
-A **Schmitt Trigger** is a fundamental electronic circuit widely used to enhance signal stability by eliminating noise and ensuring clean transitions between high and low states. It operates by introducing hysteresis, meaning it has different voltage thresholds for switching between these states. This dual-threshold mechanism makes Schmitt Triggers highly effective in applications requiring clean, precise signals, even in noisy environments.
+A **Half Adder** is a basic digital circuit that performs the addition of two binary digits. It generates two outputs: the sum and the carry. 
 
-Temperature can significantly impact signal levels and thresholds in electronic systems, leading to instability if not managed well. Schmitt Triggers counteract these effects, ensuring that even in fluctuating temperatures, the output remains stable and reliable. From conditioning signals in microcontrollers to shaping waveforms in oscillators, Schmitt Triggers are crucial in delivering precise, stable digital pulses across a wide range of applications, even in challenging environments.Converting noisy or slowly varying signals into sharp, well-defined digital pulses, they form a reliable foundation for consistent data processing in a range of electronic designs.
-
+The Gate Diffusion Input (GDI) technique is a low-power design approach for digital circuits that allows efficient logic gate implementation with fewer transistors than conventional CMOS logic. The GDI technique utilizes a combination of NMOS and PMOS transistors to achieve the required logic functions with fewer components.
 
 ## Block Diagrams For Schmitt Trigger IP
 
