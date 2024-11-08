@@ -11,20 +11,19 @@ A **Half Adder** is a basic digital circuit that performs the addition of two bi
 
 The Gate Diffusion Input (GDI) technique is a low-power design approach for digital circuits that allows efficient logic gate implementation with fewer transistors than conventional CMOS logic. The GDI technique utilizes a combination of NMOS and PMOS transistors to achieve the required logic functions with fewer components.
 
-## Block Diagrams For Schmitt Trigger IP
+## Block Diagrams For Half Adder
 
 ***
 
  
-![img 1](https://github.com/user-attachments/assets/b727b649-ab09-42d4-bbd1-160d7d3bc04a)
-<img width="158" alt="Schematic-of-Schmitt-Trigger" src="https://github.com/user-attachments/assets/f372a8e0-2a14-4b70-a12d-b04de61beece">
+![img 1](https://github.com/RX-N/GdiHalfAdder/blob/main/Images/Half-adder-block-diagram.png)
 
 
 
-## [Circuit Diagram for this IP](https://github.com/YashEkhande04/SchmittTriggerCMOS/tree/2cd60a62bca026acd2cf42a097ae0b9fd9f1507c/Schematics%20Final)
+## [Circuit Diagram for Half Adder]
 
 ***
-![Screenshot from 2024-11-04 21-35-51](https://github.com/user-attachments/assets/406c1604-1d69-4923-9ba5-7a261992bf88)
+![Screenshot from 2024-11-04 21-35-51](https://github.com/RX-N/GdiHalfAdder/blob/main/Images/Half-adder-circuit.png)
 
 
 ## [Parameters of IP](https://github.com/YashEkhande04/SchmittTriggerCMOS/tree/7a235c7304e8f03cfc1d6367c1a742f3c3c2ba90/DOCUMENTS/Final%20results%20in%20form%20of%20excel)
