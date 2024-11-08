@@ -1,0 +1,37 @@
+* g:\esimworkplace\hack\hack.cir
+
+.include "G:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__inductors.model.spice"
+.include "G:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__r+c.model.spice"
+.include "G:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__linear.model.spice"
+.lib "G:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
+.include "G:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
+.include "G:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
+.include "G:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__pnp.model.spice"
+* s c m o d e
+xsc2 net-_sc1-pad1_ a gnd gnd sky130_fd_pr__nfet_01v8 w = 2.26 l = 1.55 nf=1
+xsc1 net-_sc1-pad1_ a net-_sc1-pad3_ net-_sc1-pad3_ sky130_fd_pr__pfet_01v8 w = 2.26 l = 1.55 nf=1
+xsc3 carry a net-_sc1-pad3_ net-_sc1-pad3_ sky130_fd_pr__pfet_01v8 w = 2.26 l = 1.55 nf=1
+xsc5 sum c a net-_sc1-pad3_ sky130_fd_pr__pfet_01v8 w = 2.26 l = 1.55 nf=1
+xsc4 carry a c gnd sky130_fd_pr__nfet_01v8 w = 2.26 l = 1.55 nf=1
+xsc6 sum c net-_sc1-pad1_ gnd sky130_fd_pr__nfet_01v8 w = 2.26 l = 1.55 nf=1
+v1  a gnd pulse(0 3.3 0.000000002 0.000000002 0.000000002 0.0002 0.0004)
+v2  c gnd pulse(0 3.3 0.000000002 0.000000002 0.000000002 0.0001 0.0002)
+* u1  a plot_v1
+* u2  c plot_v1
+* u4  sum plot_v1
+* u3  carry plot_v1
+v3 net-_sc1-pad3_ gnd  dc 3.3
+xsc7 sum gnd sky130_fd_pr__cap_mim_m3_1 c = 0.0000001
+.tran 80e-06 800e-06 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(a)
+plot v(c)
+plot v(sum)
+plot v(carry)
+.endc
+.end
