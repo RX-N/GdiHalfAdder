@@ -30,13 +30,13 @@ The Gate Diffusion Input (GDI) technique is a low-power design approach for digi
 ***
 AT 10'C
 
-![Screenshot from 2024-11-04 22-02-35](https://github.com/user-attachments/assets/f0831557-158e-401b-8b65-1a1c2dae90cf)
+![Screenshot from 2024-11-04 22-02-35](https://github.com/RX-N/GdiHalfAdder/blob/main/Images/Screenshot%202024-11-08%20153800.png)
 
-![Screenshot from 2024-11-04 22-04-24](https://github.com/user-attachments/assets/26650b11-49ce-433b-826e-f51f07cfe617)
+![Screenshot from 2024-11-04 22-04-24](https://github.com/RX-N/GdiHalfAdder/blob/main/Images/Screenshot%202024-11-08%20153822.png)
 
-![Screenshot from 2024-11-04 22-04-24](https://github.com/user-attachments/assets/26650b11-49ce-433b-826e-f51f07cfe617)
+![Screenshot from 2024-11-04 22-04-24](https://github.com/RX-N/GdiHalfAdder/blob/main/Images/Screenshot%202024-11-08%20153850.png)
 
-![Screenshot from 2024-11-04 22-04-24](https://github.com/user-attachments/assets/26650b11-49ce-433b-826e-f51f07cfe617)
+![Screenshot from 2024-11-04 22-04-24](https://github.com/RX-N/GdiHalfAdder/blob/main/Images/Screenshot%202024-11-08%20153800.png)
 
 ## Tools used for Simulation eSim/Ngspice/
 ***
